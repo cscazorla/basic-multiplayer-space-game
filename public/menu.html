@@ -1,0 +1,68 @@
+<link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+/>
+
+<style>
+    div#menu {
+        background: #eeeeee;
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+        border: 2px solid #fff;
+
+        
+    }
+
+    div#menu h1 {
+        font-size: 14px;
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+    }
+
+    div#menu p {
+        font-family: monospace;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    input {
+        margin: 10px auto;
+    }
+
+    input[type='submit'] {
+        background: #fca311;
+        padding: 5px 10px;
+        border: 2px solid #fff;
+        cursor: pointer;
+    }
+</style>
+
+<div id="menu">
+    <h1>Welcome</h1>
+    <p>Please, fill your username and pick a battleship</p>
+    <div style="text-align: center;">
+        <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your name"
+            autocomplete="off"
+        />
+    </div>
+
+    <img src="assets/playerShip1_blue.png" alt="">
+
+    <div style="text-align: center;">
+        <input type="radio" id="shipModel" name="shipModel" value="1" checked /> Blue 1
+        <input type="radio" id="shipModel" name="shipModel" value="2" /> Blue 2
+        <input type="radio" id="shipModel" name="shipModel" value="3" /> Blue 3
+        <input type="radio" id="shipModel" name="shipModel" value="4" /> Red 1
+        <input type="radio" id="shipModel" name="shipModel" value="5" /> Red 2
+        <input type="radio" id="shipModel" name="shipModel" value="6" /> Red 3
+    </div>
+
+    <div style="text-align: center;">
+        <input type="submit" value="Play" name="playButton" />
+    </div>
+</div>
